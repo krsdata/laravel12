@@ -1,6 +1,14 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(php -m)",
+      "Bash(composer require:*)",
+      "Bash(php artisan:*)",
+      "Bash(grep -rn \"use Illuminate\\\\\\\\\\\\\\\\Support\\\\\\\\\\\\\\\\Facades\\\\\\\\\\\\\\\\Redis\\\\|use Redis;\" app/Http/Controllers/Api/ApiController.php app/Http/Controllers/Api/MatchApiController.php)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "laravel-boost"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
